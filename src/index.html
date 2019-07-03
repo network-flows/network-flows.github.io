@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="title" content="宁子瀚的个人主页">
+<meta name="keywords" content="基础实验1">
+<meta name="author" content="宁子瀚">
+<meta name="description" content="Ning's home page">
+<style>
+html
+{
+    display:flex;
+    justify-content:center;
+    background:white;
+}
+body
+{
+    margin: 0px 10px;
+    max-width: 65em;
+    background: white;
+    font-family:"Helvetica","Georgia",sans-serif;
+    display:block;
+}
+h1
+{
+    color: blue;
+    font-size: 14px;
+}
+.Section
+{
+    display:flex;
+    flex-direction:column;
+}
+#TOP
+{
+    text-align:right;
+    background: rgba(0,0,0,0);
+    display: flex;
+    justify-content:flex-end;
+}
+.topBtn
+{
+    display:inline;
+    text-align:right;
+    padding: 60 px;
+}
+a.menu
+{
+    display:end;
+    margin: 10pt;
+    color: lightblue;
+    font-size: 20pt;
+}
+#Title
+{
+    font-size: 40pt;
+    color: gray;
+}
+
+.cutline
+{
+    background:lightblue;
+    margin:20px 0px;
+    height:2pt;
+}
+.QHBoxLayout
+{
+    display:flex;
+    flex-direction:row;
+}
+.QVBoxLayout
+{
+    display:flex;
+    flex-direction:column;
+}
+.alignRight
+{
+    justify-content:flex-end;
+}
+.alignLeft
+{
+    justify-content:flex-start;
+}
+.alignCenter
+{
+    justify-content:center;
+}
+.sprinter
+{
+    flex-grow:1;
+}
+h2
+{
+    color:lightblue;
+    font-size:35px;
+}
+li,p
+{
+    text-indent:0em;
+    color: gray;
+    font-size: 23px;
+}
+a:hover
+{
+    color: blue;
+}
+</style>
+</head>
+
+<body class="alignCenter QVBoxLayout">
+    <h1 id="Title">宁子瀚的个人主页</h1>
+    <div class="QHBoxLayout">
+        <div class="QHBoxLayout alignLeft">
+            <a href="1.html" class="menu">主页</a>
+            <a href="2.html" class="menu">日志</a>
+            <a href="3.html" class="menu">动态</a>
+        </div>
+        <div class="QHBoxLayout alignRight sprinter">
+            <a href="#Wechat" class="menu">Wechat</a>
+            <a href="#QQ" class="menu">QQ</a>
+            <a href="https://github.com/network-flows" class=menu>Github</a>
+        </div>
+    </div>
+    <div class="cutline"></div>
+    <div class="QHBoxLayout">
+        <div class="QVBoxLayout">
+            <h2>个人信息</h2>
+            <ul>
+                <li>姓名：宁子瀚</li>
+                <li>班级：软件71</li>
+                <li>爱好：钻研一些好玩的东西！</li>
+                <li>短期愿望：学CSS！学html！</li>
+                <li>照片：只有聪明人才能看到！</li>
+                <li>属性：不可回收！</li>
+            </ul>
+        </div>
+        <div class="QHBoxLayout alignRight sprinter">
+            <img src="../ext/photo.jpg" width=250px height=300px alt="照片太帅竟然无法显示！">
+        </div>
+    </div>
+    <div class="cutline"></div>
+    <div class="QVBoxLayout">
+        <h2>一个简单的介绍</h2>
+        <p>我来自湖北荆州，我的爱好是钻研一些好玩的东西，比如一些有意思的小程序等等。除此之外我还比较喜欢钻研数学。数学的很多命题，
+        无论是证明的过程还是最终的结论，都往往能让人眼前一亮，这也是数学吸引我的一个地方。希望能和大家交个朋友！</p>
+    </div>
+    <div class="cutline"></div>
+    <div class=QVBoxLayout>
+        <h2><a href="2.html" style="color:inherit">学习CSS！学习Html！</a></h2>
+        <p>还没来得及从考完的欢(bei)乐(shang)中反应过来，紧张而充实的小学期又开始了。这次小学期的主题是前端，对于前端，我之前的态度是...</p>
+    </div>
+    <div class="cutline"></div>
+    <div class="QVBoxLayout">
+        <h2>交个朋友！</h2>
+        <p><a name="Wechat" style="color:inherit">Wechat: network_flows</a></p>
+        <p><a name="QQ" style="color:inherit">QQ: 2328562992</a></p>
+        <p><a name="Mail" style="color:inherit">Mail: ningzh17@mails.tsinghua.edu.cn</a></p>
+        <p><a style="color:inherit">Github: <a href="https://github.com/network-flows">network-flows</a></p>
+    </div>
+</body>
+</html>
