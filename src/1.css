@@ -1,0 +1,97 @@
+html
+{
+    display:flex;
+    justify-content:center;
+    background:white;
+}
+body
+{
+    margin: 0px 10px;
+    max-width: 65em;
+    background: white;
+    font-family:"Helvetica","Georgia",sans-serif;
+    display:block;
+}
+h1
+{
+    color: blue;
+    font-size: 14px;
+}
+.Section
+{
+    display:flex;
+    flex-direction:column;
+}
+#TOP
+{
+    text-align:right;
+    background: rgba(0,0,0,0);
+    display: flex;
+    justify-content:flex-end;
+}
+.topBtn
+{
+    display:inline;
+    text-align:right;
+    padding: 60 px;
+}
+a.menu
+{
+    display:end;
+    margin: 10pt;
+    color: lightblue;
+    font-size: 20pt;
+}
+#Title
+{
+    font-size: 40pt;
+    color: gray;
+}
+
+.cutline
+{
+    background:lightblue;
+    margin:20px 0px;
+    height:2pt;
+}
+.QHBoxLayout
+{
+    display:flex;
+    flex-direction:row;
+}
+.QVBoxLayout
+{
+    display:flex;
+    flex-direction:column;
+}
+.alignRight
+{
+    justify-content:flex-end;
+}
+.alignLeft
+{
+    justify-content:flex-start;
+}
+.alignCenter
+{
+    justify-content:center;
+}
+.sprinter
+{
+    flex-grow:1;
+}
+h2
+{
+    color:lightblue;
+    font-size:35px;
+}
+li,p
+{
+    text-indent:0em;
+    color: gray;
+    font-size: 23px;
+}
+a:hover
+{
+    color: blue;
+}
