@@ -1,53 +1,164 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-<meta name="title" content="学习CSS！学习Html">
+<meta name="title" content="宁子瀚的个人主页">
 <meta name="keywords" content="基础实验1">
 <meta name="author" content="宁子瀚">
 <meta name="description" content="Ning's home page">
-<link rel="stylesheet" href="1.css">
+<style>
+html
+{
+    display:flex;
+    justify-content:center;
+    background:white;
+}
+body
+{
+    margin: 0px 10px;
+    max-width: 65em;
+    background: white;
+    font-family:"Helvetica","Georgia",sans-serif;
+    display:block;
+}
+h1
+{
+    color: blue;
+    font-size: 14px;
+}
+.Section
+{
+    display:flex;
+    flex-direction:column;
+}
+#TOP
+{
+    text-align:right;
+    background: rgba(0,0,0,0);
+    display: flex;
+    justify-content:flex-end;
+}
+.topBtn
+{
+    display:inline;
+    text-align:right;
+    padding: 60 px;
+}
+a.menu
+{
+    display:end;
+    margin: 10pt;
+    color: lightblue;
+    font-size: 20pt;
+}
+#Title
+{
+    font-size: 40pt;
+    color: gray;
+}
+
+.cutline
+{
+    background:lightblue;
+    margin:20px 0px;
+    height:2pt;
+}
+.QHBoxLayout
+{
+    display:flex;
+    flex-direction:row;
+}
+.QVBoxLayout
+{
+    display:flex;
+    flex-direction:column;
+}
+.alignRight
+{
+    justify-content:flex-end;
+}
+.alignLeft
+{
+    justify-content:flex-start;
+}
+.alignCenter
+{
+    justify-content:center;
+}
+.sprinter
+{
+    flex-grow:1;
+}
+h2
+{
+    color:lightblue;
+    font-size:35px;
+}
+li,p
+{
+    text-indent:0em;
+    color: gray;
+    font-size: 23px;
+}
+a:hover
+{
+    color: blue;
+}
+</style>
 </head>
 
 <body class="alignCenter QVBoxLayout">
-    <h1 id="Title">宁子瀚的日志</h1>
+    <h1 id="Title">宁子瀚的个人主页</h1>
     <div class="QHBoxLayout">
         <div class="QHBoxLayout alignLeft">
-            <a href="1.html" class=menu>主页</a>
-            <a href="2.html" class=menu>日志</a>
-            <a href="3.html" class=menu>动态</a>
+            <a href="index.html" class="menu">主页</a>
+            <a href="2.html" class="menu">日志</a>
+            <a href="3.html" class="menu">动态</a>
         </div>
         <div class="QHBoxLayout alignRight sprinter">
-            <a href="1.html" class=menu>Wechat</a>
-            <a href="1.html" class=menu>QQ</a>
+            <a href="#Wechat" class="menu">Wechat</a>
+            <a href="#QQ" class="menu">QQ</a>
             <a href="https://github.com/network-flows" class=menu>Github</a>
         </div>
     </div>
     <div class="cutline"></div>
-    <div class=QVBoxLayout>
-        <h2>学习CSS！学习Html</h2>
-        <p>还没来得及从考完的欢(bei)乐(shang)中反应过来，紧张而充实的小学期又开始了。这次小学期的主题是前端，对于前端，我之前的态度是
-        比较反感的，相比于高效的程序和脚本而言，前端则显得既不那么高效，又缺乏处理事情的能力。这次课能不能改变我对前端的看法呢？
-        <p>听完了第一节课之后，我个人感觉是比较晕的，前端的东西感觉很多很杂，仿佛总共有一百种元素，每个元素有一百种属性，每个属性有一百种不同含义的取值，让人难以记忆。</p>
-        <p>硬着头皮我开始创建自己的个人主页，不懂的问题就查资料，很快我就找到了门路，从最开始的时候，设置长度的时候把数字和单位分开导致invalid proper value，
-        到后来慢慢地可以设计各个组件的排版，直到最后一个排版比较完整的主页显现在我的面前，我才发现前端其实也挺有趣的。</p>
-        <p>我之前用过秀米排版推送，我觉得前端设计可能跟秀米比较类似，虽然秀米拥有图形化界面，调整比较方便，但是拥有文字排版功能的html+css可以做到很多秀米不能做到的东西，
-        如果加上JS，还能实现更加炫酷的效果！想到这些，我又对之后的课程有了一点期待，后面的学习尽管困难可能有很多，但是经过学习之后一定可以做出效果更加完美的网页！</p>
-    </div>
-    <div class="cutline"></div>
-    <div class=QVBoxLayout>
-        <h2>基础实验一 解题思路</h2>
-        <p>助教要求在个人主页上不允许贴代码，但是如果你点进去的话就会发现里面也没有代码（滑稽）</p>
-        <p>DDL:这题主要是考察对内置类型Date的使用情况的掌握，直接用给定的字符串初始化Date对象，再用Date对象相减得到时间差（毫秒数），最后根据时间差来判断超时天数即可</p>
-        <p>迭代器：在构造函数中直接将树形结构转化为链表结构存储到一个列表中，再根据迭代器的下标即可访问对应位置的元素，并实现next_value功能（个人感觉题目中说的要求比较模糊）</p>
-        <p>fmap：采用递归式映射即可，fmap将数字映射成对应的值，或者对数组中的每个元素执行fmap，即可实现所需的功能。
-        <p>推箱子：除了暴搜别无他法2333，可以考虑将所给的数组进行预处理，以-1代表砖块，以0代表空地，1代表玩家，2代表箱子，4代表目的地，即可通过简单的与运算获得某地是否有箱子，
-        或者是否为空地等信息。然而我卡在了16:00的ddl上没有写完。这件事告诉我们赶DDL不是优良传统（误）
-        <p>运算符定义：巨坑！要求返回字符串！除了这个之外其他的都好说，此外"&amp;"运算可以通过枚举表达式来确定，再就是记得除法要parseInt一下；助教说不会出现负数，那么负号判断也省了，妙哉。
+    <div class="QHBoxLayout">
+        <div class="QVBoxLayout">
+            <h2>个人信息</h2>
+            <ul>
+                <li>姓名：宁子瀚</li>
+                <li>班级：软件71</li>
+                <li>爱好：钻研一些好玩的东西！</li>
+                <li>短期愿望：学CSS！学html！</li>
+                <li>照片：只有聪明人才能看到！</li>
+                <li>属性：不可回收！</li>
+            </ul>
+        </div>
+        <div class="QHBoxLayout alignRight sprinter">
+            <img src="../ext/photo.jpg" width=250px height=300px alt="照片太帅竟然无法显示！">
+        </div>
     </div>
     <div class="cutline"></div>
     <div class="QVBoxLayout">
-        <h2>更多日志正在开发中</h2>
-        <p>作者忙于大作业，并没有时间更新日志&nbspTAT</h2>
+        <h2>一个简单的介绍</h2>
+        <p>我来自湖北荆州，我的爱好是钻研一些好玩的东西，比如一些有意思的小程序等等。除此之外我还比较喜欢钻研数学。数学的很多命题，
+        无论是证明的过程还是最终的结论，都往往能让人眼前一亮，这也是数学吸引我的一个地方。希望能和大家交个朋友！</p>
+    </div>
+    <div class="cutline"></div>
+    <div class=QVBoxLayout>
+        <h2><a href="2.html" style="color:inherit">学习CSS！学习Html！</a></h2>
+        <p>还没来得及从考完的欢(bei)乐(shang)中反应过来，紧张而充实的小学期又开始了。这次小学期的主题是前端，对于前端，我之前的态度是...</p>
+    </div>
+    <div class=QVBoxLayout>
+        <h2><a href="2.html" style="color:inherit">基础实验一 解题思路</a></h2>
+        <p>助教要求在个人主页上不允许贴代码，但是如果你点进去的话就会发现里面...</p>
+    </div>
+    <div class="cutline"></div>
+    <div class="QVBoxLayout">
+        <h2>交个朋友！</h2>
+        <p><a name="Wechat" style="color:inherit">Wechat: network_flows</a></p>
+        <p><a name="QQ" style="color:inherit">QQ: 2328562992</a></p>
+        <p><a name="Mail" style="color:inherit">Mail: ningzh17@mails.tsinghua.edu.cn</a></p>
+        <p><a style="color:inherit">Github: <a href="https://github.com/network-flows">network-flows</a></p>
     </div>
 </body>
 </html>
